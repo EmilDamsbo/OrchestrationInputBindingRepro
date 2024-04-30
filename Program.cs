@@ -16,6 +16,7 @@ public static class Program
         var host = new HostBuilder()
             .ConfigureFunctionsWebApplication(
                 // breaks orchestration input binding
+                // if you comment out this line, the orchestration successfully completes
                 builder => new DurableTaskExtensionStartup().Configure(builder) 
             )
             .ConfigureServices(services =>
