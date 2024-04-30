@@ -1,0 +1,1 @@
+Invoke-RestMethod -Uri "http://localhost:7023/api/MyFunction_HttpStart" -Method Post
